@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About — Your Name",
-  description: "Learn more about my background, experience, and skills.",
+  title: "About — Ethan Chapman",
+  description: "Learn more about my background, experience, and skills in computer science, AI, machine learning, and information technology.",
 };
 
 export default function AboutPage() {
@@ -16,16 +16,8 @@ export default function AboutPage() {
         <section className="bg-white p-8 rounded-card shadow-lg">
           <h2 className="text-2xl font-bold text-dark mb-4">Introduction</h2>
           <div className="prose max-w-none space-y-4 text-gray-700">
-            <p>
-              Hi! I'm a passionate software developer with a love for creating elegant 
-              solutions to complex problems. With experience across the full stack, I 
-              specialize in building modern web applications that are fast, accessible, 
-              and user-friendly.
-            </p>
-            <p>
-              I believe in writing clean, maintainable code and following best practices. 
-              I'm constantly learning and staying up-to-date with the latest technologies 
-              and industry trends.
+            <p className="text-lg">
+              computer science | ai & machine learning | information technology | hardware, software & coding
             </p>
           </div>
         </section>

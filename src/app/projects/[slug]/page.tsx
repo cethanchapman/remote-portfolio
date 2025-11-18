@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
   }
 
   return {
-    title: `${project.title} — Your Name`,
+    title: `${project.title} — Ethan Chapman`,
     description: project.desc,
   };
 }
@@ -130,8 +130,13 @@ export default function ProjectPage({ params }: ProjectPageProps) {
         <section className="bg-white p-8 rounded-card shadow-lg">
           <h2 className="text-2xl font-bold text-dark mb-4">The Problem</h2>
           <p className="text-gray-700 leading-relaxed">
-            [Describe the problem this project solves. What was the challenge? 
-            Who was affected? Why was it important to solve?]
+            {project.slug === "sports-prediction" ? (
+              "Predicting sports outcomes is challenging due to the complexity of variables involved - player statistics, team dynamics, weather conditions, and historical performance. Traditional methods often fail to capture these intricate patterns, leading to inaccurate predictions."
+            ) : project.slug === "stock-tracking" ? (
+              "Individual investors often struggle to track their portfolios effectively and make informed decisions. Existing tools are either too complex for casual investors or lack the real-time insights needed for active trading. There's a need for an accessible platform that provides comprehensive market data and portfolio analytics."
+            ) : (
+              "[Describe the problem this project solves. What was the challenge? Who was affected? Why was it important to solve?]"
+            )}
           </p>
         </section>
 
@@ -139,13 +144,36 @@ export default function ProjectPage({ params }: ProjectPageProps) {
         <section className="bg-white p-8 rounded-card shadow-lg">
           <h2 className="text-2xl font-bold text-dark mb-4">The Solution</h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            [Describe your approach to solving the problem. What technologies did you use? 
-            What were the key features?]
+            {project.slug === "sports-prediction" ? (
+              "Developed an AI-powered prediction platform that uses machine learning algorithms to analyze vast amounts of historical data, player statistics, and real-time factors. The system employs multiple ML models to generate accurate game outcome predictions."
+            ) : project.slug === "stock-tracking" ? (
+              "Created a comprehensive stock tracking platform that combines real-time market data with portfolio management tools. The application features intuitive dashboards, price alerts, and advanced analytics to help investors make data-driven decisions."
+            ) : (
+              "[Describe your approach to solving the problem. What technologies did you use? What were the key features?]"
+            )}
           </p>
           <ul className="list-disc list-inside text-gray-700 space-y-2">
-            <li>Feature 1: Description</li>
-            <li>Feature 2: Description</li>
-            <li>Feature 3: Description</li>
+            {project.slug === "sports-prediction" ? (
+              <>
+                <li>Machine Learning Models: Multiple algorithms for accurate predictions</li>
+                <li>Real-time Data Processing: Live updates and analysis</li>
+                <li>Historical Analysis: Pattern recognition from past games</li>
+                <li>User-friendly Interface: Easy-to-understand predictions and insights</li>
+              </>
+            ) : project.slug === "stock-tracking" ? (
+              <>
+                <li>Real-time Market Data: Live stock prices and market updates</li>
+                <li>Portfolio Management: Track multiple investments in one place</li>
+                <li>Advanced Analytics: Trend analysis and performance metrics</li>
+                <li>Custom Alerts: Price notifications and market movement alerts</li>
+              </>
+            ) : (
+              <>
+                <li>Feature 1: Description</li>
+                <li>Feature 2: Description</li>
+                <li>Feature 3: Description</li>
+              </>
+            )}
           </ul>
         </section>
 
@@ -166,8 +194,13 @@ export default function ProjectPage({ params }: ProjectPageProps) {
         <section className="bg-white p-8 rounded-card shadow-lg">
           <h2 className="text-2xl font-bold text-dark mb-4">Lessons Learned</h2>
           <p className="text-gray-700 leading-relaxed">
-            [Share what you learned from this project. What challenges did you overcome? 
-            What would you do differently? What skills did you develop?]
+            {project.slug === "sports-prediction" ? (
+              "This project deepened my understanding of machine learning algorithms and their practical applications. I learned the importance of data quality and preprocessing in building accurate predictive models. Working with large datasets taught me valuable lessons about optimization and scalability in AI systems."
+            ) : project.slug === "stock-tracking" ? (
+              "Building this platform enhanced my skills in working with financial APIs and real-time data streams. I gained experience in creating responsive, data-intensive applications that handle frequent updates efficiently. The project also taught me about the importance of data visualization in making complex information accessible to users."
+            ) : (
+              "[Share what you learned from this project. What challenges did you overcome? What would you do differently? What skills did you develop?]"
+            )}
           </p>
         </section>
       </div>

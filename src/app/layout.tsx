@@ -4,13 +4,13 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Your Name — Portfolio",
-  description: "Personal portfolio showcasing projects and case studies.",
-  keywords: ["portfolio", "web development", "software engineer", "projects"],
-  authors: [{ name: "Your Name" }],
+  title: "Ethan Chapman — Portfolio",
+  description: "Computer Science, AI & Machine Learning, Information Technology - Portfolio showcasing projects in sports prediction, stock tracking, and more.",
+  keywords: ["portfolio", "computer science", "AI", "machine learning", "software engineer", "IT", "projects"],
+  authors: [{ name: "Ethan Chapman" }],
   openGraph: {
-    title: "Your Name — Portfolio",
-    description: "Personal portfolio showcasing projects and case studies.",
+    title: "Ethan Chapman — Portfolio",
+    description: "Computer Science, AI & Machine Learning, Information Technology - Portfolio showcasing projects in sports prediction, stock tracking, and more.",
     type: "website",
   },
 };
