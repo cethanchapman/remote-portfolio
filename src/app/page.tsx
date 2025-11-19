@@ -31,7 +31,7 @@ export default function Home() {
           Hi, I&apos;m <span className="text-primary">Ethan Chapman</span>
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto">
-          Computer Science | AI & Machine Learning | Information Technology | Hardware, Software & Coding
+          Computer Science | AI & Machine Learning | App Development | Information Technology | Hardware, Software & Coding
         </p>
         <div className="flex gap-4 justify-center mt-8">
           <Link
@@ -102,13 +102,13 @@ export default function Home() {
         <div className="space-y-4">
           <p className="text-gray-700">
             <span className="font-semibold">Email:</span>{" "}
-            <a href="mailto:your.email@example.com" className="text-primary hover:underline">
-              your.email@example.com
+            <a href="mailto:cethanchapman@gmail.com" className="text-primary hover:underline">
+              cethanchapman@gmail.com
             </a>
           </p>
           <div className="flex gap-4 mt-6">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/cethanchapman"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-primary transition-colors"
@@ -116,20 +116,12 @@ export default function Home() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/cethanchapman/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-primary transition-colors"
             >
               LinkedIn
-            </a>
-            <a
-              href="https://twitter.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-600 hover:text-primary transition-colors"
-            >
-              Twitter
             </a>
           </div>
         </div>

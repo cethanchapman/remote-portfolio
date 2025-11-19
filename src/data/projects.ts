@@ -50,6 +50,21 @@ export const projects: Project[] = [
     },
   },
   {
+    id: "network-dashboard",
+    title: "Custom Network Monitoring Dashboard Builder",
+    slug: "network-dashboard",
+    img: "/assets/project3.png",
+    desc: "SaaS platform that generates custom-branded network monitoring dashboards for IT professionals, MSPs, and businesses.",
+    longDesc: `A revolutionary "Dashboard-as-a-Service" platform where IT consultants and managed service providers can configure, customize, and deploy fully-branded network monitoring dashboards for their clients. Think "Shopify for Network Monitoring" - users configure their needs through a web interface, customize branding, and generate deployable dashboard instances.`,
+    tags: ["Next.js", "Docker", "Network Monitoring", "SaaS", "Multi-tenant"],
+    featured: true,
+    demoUrl: "#coming-soon",
+    githubUrl: "https://github.com/cethanchapman/network-dashboard-builder",
+    metrics: {
+      users: "In Development",
+    },
+  },
+  {
     id: "project-three",
     title: "Project Three",
     slug: "project-three",
@@ -60,7 +75,7 @@ export const projects: Project[] = [
     tags: ["Python", "Docker", "AWS", "Redis"],
     featured: false,
     demoUrl: "https://example.com",
-    githubUrl: "https://github.com/yourusername/project-three",
+    githubUrl: "https://github.com/cethanchapman/project-three",
     metrics: {
       stars: 420,
       downloads: "15K+",

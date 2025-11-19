@@ -9,9 +9,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About Column */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Your Name</h3>
+            <h3 className="text-xl font-bold mb-4">Ethan Chapman</h3>
             <p className="text-gray-400">
-              Building beautiful and functional software that solves real problems.
+              Computer Science | AI & Machine Learning | App Development | Information Technology | Hardware, Software & Coding
             </p>
           </div>
 
@@ -48,7 +48,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/cethanchapman"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-primary transition-colors"
@@ -58,7 +58,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://www.linkedin.com/in/cethanchapman/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-primary transition-colors"
@@ -68,17 +68,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://twitter.com/yourusername"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-primary transition-colors"
-                >
-                  Twitter
-                </a>
-              </li>
-              <li>
-                <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:cethanchapman@gmail.com"
                   className="text-gray-400 hover:text-primary transition-colors"
                 >
                   Email
@@ -89,7 +79,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {currentYear} Your Name. All rights reserved.</p>
+          <p>&copy; {currentYear} Ethan Chapman. All rights reserved.</p>
         </div>
       </div>
     </footer>

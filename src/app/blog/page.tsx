@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog — Your Name",
-  description: "Thoughts on web development, tutorials, and lessons learned.",
+  title: "Blog — Ethan Chapman",
+  description: "Thoughts on computer science, AI, machine learning, and technology.",
 };
 
 export default function BlogPage() {
@@ -15,7 +15,7 @@ export default function BlogPage() {
 
       <div className="bg-white p-12 rounded-card shadow-lg text-center">
         <p className="text-gray-600 text-lg">
-          I'm currently working on setting up the blog. Check back soon for articles 
+          I&apos;m currently working on setting up the blog. Check back soon for articles 
           on web development, best practices, and project insights.
         </p>
       </div>
