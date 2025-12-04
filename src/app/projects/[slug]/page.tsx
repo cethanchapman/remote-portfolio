@@ -87,8 +87,12 @@ export default function ProjectPage({ params }: ProjectPageProps) {
       </header>
 
       {/* Project Image */}
-      <div className="w-full h-96 bg-gray-200 rounded-card mb-12 flex items-center justify-center">
-        <span className="text-gray-400">Project Screenshot</span>
+      <div className="w-full h-96 relative bg-gray-200 rounded-card mb-12 overflow-hidden">
+        <img
+          src={project.img}
+          alt={`${project.title} screenshot`}
+          className="w-full h-full object-cover"
+        />
       </div>
 
       {/* Project Details */}

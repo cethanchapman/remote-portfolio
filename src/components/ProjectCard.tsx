@@ -9,6 +9,7 @@ type Project = {
   desc: string;
   tags?: string[];
   featured?: boolean;
+  githubUrl?: string;
 };
 
 interface ProjectCardProps {
@@ -19,18 +20,12 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article className="flex flex-col md:flex-row items-start gap-6 p-6 border border-gray-200 rounded-card hover:shadow-lg transition-shadow">
       <div className="w-full md:w-64 h-48 relative rounded-card overflow-hidden bg-gray-200 flex-shrink-0">
-        {/* Placeholder for project image - replace with actual Image component when you have images */}
-        <div className="w-full h-full flex items-center justify-center text-gray-400">
-          <span className="text-sm">Project Image</span>
-        </div>
-        {/* Uncomment when you have actual images:
         <Image
           src={project.img}
           alt={`${project.title} screenshot`}
           fill
           className="object-cover"
         />
-        */}
       </div>
 
       <div className="flex-1">
@@ -58,12 +53,16 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           >
             View Details →
           </Link>
-          <a
-            href="#"
-            className="text-gray-600 hover:text-dark font-semibold inline-flex items-center"
-          >
-            View Code
-          </a>
+          {project.githubUrl && (
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-dark font-semibold inline-flex items-center"
+            >
+              View Code
+            </a>
+          )}
         </div>
       </div>
     </article>

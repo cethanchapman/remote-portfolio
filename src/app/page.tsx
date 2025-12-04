@@ -1,28 +1,10 @@
 import ProjectCard from "@/components/ProjectCard";
 import Link from "next/link";
-
-const projects = [
-  {
-    id: "sports-prediction",
-    title: "Sports Prediction Site",
-    slug: "sports-prediction",
-    img: "/assets/project1.png",
-    desc: "AI-powered sports prediction platform leveraging machine learning models for game outcome analysis.",
-    tags: ["Python", "Machine Learning", "AI", "Data Analysis"],
-    featured: true,
-  },
-  {
-    id: "stock-tracking",
-    title: "Stock Tracking Site",
-    slug: "stock-tracking",
-    img: "/assets/project2.png",
-    desc: "Real-time stock market tracking and portfolio management application with advanced analytics.",
-    tags: ["React", "TypeScript", "Financial APIs", "Data Visualization"],
-    featured: true,
-  },
-];
+import { projects } from "@/data/projects";
 
 export default function Home() {
+  // Filter for featured projects only
+  const featuredProjects = projects.filter(p => p.featured);
   return (
     <main className="max-w-5xl mx-auto px-6 py-12 space-y-16">
       {/* Hero Section */}
@@ -86,7 +68,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="space-y-8">
-          {projects.map((p) => (
+          {featuredProjects.map((p) => (
             <ProjectCard key={p.id} project={p} />
           ))}
         </div>

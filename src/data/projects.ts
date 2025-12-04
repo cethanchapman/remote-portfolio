@@ -19,34 +19,36 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "sports-prediction",
-    title: "Sports Prediction Site",
+    title: "Sports Score Predictor",
     slug: "sports-prediction",
-    img: "/assets/project1.png",
-    desc: "AI-powered sports prediction platform leveraging machine learning models for game outcome analysis.",
-    longDesc: `An advanced sports analytics platform that uses machine learning algorithms to predict game outcomes. 
-    The system analyzes historical data, player statistics, and real-time factors to generate accurate predictions.`,
-    tags: ["Python", "Machine Learning", "AI", "Data Analysis"],
+    img: "/assets/sports-predictor.png",
+    desc: "AI-powered sports prediction platform with machine learning models for NBA, College Basketball, and Soccer matches.",
+    longDesc: `A comprehensive sports analytics platform that uses machine learning algorithms to predict game outcomes across multiple sports leagues. 
+    Features NBA predictions, College Basketball predictions with conference filters (SEC, Big 12, Big Ten, ACC, Big East, Pac-12), and Soccer predictions for Premier League, La Liga, Serie A, Champions League, and Europa League. 
+    The system analyzes historical data, team statistics, and matchup factors to generate predictions for upcoming games. Users can predict individual games or bulk predict all games in a schedule.`,
+    tags: ["Python", "Machine Learning", "TensorFlow", "Sports Analytics", "Railway"],
     featured: true,
-    demoUrl: "#coming-soon",
-    githubUrl: "https://github.com/cethanchapman/sports-prediction",
+    demoUrl: "https://predictor.up.railway.app/nba.html",
+    githubUrl: "https://github.com/cethanchapman/pomV2",
     metrics: {
-      users: "Coming Soon",
+      users: "Live & Public",
     },
   },
   {
     id: "stock-tracking",
-    title: "Stock Tracking Site",
+    title: "sideStonks - Pullback Trading Scanner",
     slug: "stock-tracking",
-    img: "/assets/project2.png",
-    desc: "Real-time stock market tracking and portfolio management application with advanced analytics.",
-    longDesc: `A comprehensive stock tracking platform that provides real-time market data, portfolio management, 
-    and advanced analytics. Features include price alerts, trend analysis, and personalized investment insights.`,
-    tags: ["React", "TypeScript", "Financial APIs", "Data Visualization"],
+    img: "/assets/stock-tracker.png",
+    desc: "Automated pullback trading setup scanner with real-time alerts, technical analysis, and risk/reward calculations.",
+    longDesc: `An intelligent stock trading platform that automatically scans hundreds of stocks to identify high-quality pullback setups based on technical criteria. 
+    Features include a real-time Scanner for discovering opportunities, a Dashboard for monitoring watchlist stocks, and browser notifications for trade alerts with calculated entry points, stop-loss levels, and take-profit targets.
+    All setups maintain a minimum 2:1 risk/reward ratio. The system tracks setup states in real-time and provides historical alert performance data to help traders execute informed decisions.`,
+    tags: ["Python", "Technical Analysis", "Real-time Alerts", "Trading Systems", "Railway"],
     featured: true,
-    demoUrl: "#coming-soon",
-    githubUrl: "https://github.com/cethanchapman/stock-tracking",
+    demoUrl: "https://stonks-track.up.railway.app/",
+    githubUrl: "https://github.com/cethanchapman/stonks",
     metrics: {
-      users: "Coming Soon",
+      users: "Live & Public",
     },
   },
   {
